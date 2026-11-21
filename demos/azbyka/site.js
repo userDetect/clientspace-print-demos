@@ -72,6 +72,24 @@ if (rateSearch) {
   filterRates();
 }
 
+const quick = document.querySelector('#quick-estimate');
+if (quick) {
+  const {tariff,quantity,product} = quick.elements;
+  const result = document.querySelector('#quick-total');
+  function updateQuick(resetQuantity) {
+    const rate = rateById.get(tariff.value);
+    product.value = rate?.product ?? '';
+    if (resetQuantity && rate) quantity.value = String(rate.quantity ?? 1);
+    const count = quantity.valueAsNumber;
+    const amount = rate?.mode === 'unit' && Number.isInteger(count) && count > 0 ? rate.amount * count :
+      rate?.mode === 'batch' && count === rate.quantity ? rate.amount : null;
+    result.textContent = amount === null ? 'Стоимость уточнит менеджер.' : 'Предварительно ' + money.format(amount);
+  }
+  tariff.addEventListener('change',() => updateQuick(true));
+  quantity.addEventListener('input',() => updateQuick(false));
+  updateQuick(false);
+}
+
 const form = document.querySelector('#order-form');
 if (form) {
   const lines = document.querySelector('#lines');
@@ -80,6 +98,20 @@ if (form) {
   const error = document.querySelector('#order-error');
   const done = document.querySelector('#order-done');
   let pending = false;
+  let savedBrief = '';
+  const copyBrief = document.querySelector('#copy-brief');
+  copyBrief?.addEventListener('click', async () => {
+    const status = document.querySelector('#copy-status');
+    try {
+      await navigator.clipboard.writeText(savedBrief);
+      status.textContent = 'Текст скопирован.';
+    } catch {
+      const text = node('textarea', '', savedBrief);
+      text.readOnly = true;
+      status.replaceChildren(text);
+      text.select();
+    }
+  });
 
   function labelled(label, control, className) {
     const wrapper = node('label', className);
@@ -126,7 +158,7 @@ if (form) {
 
   const entries = new WeakMap();
 
-  function makeLine(initialProduct = '', initialTariff = '') {
+  function makeLine(initialProduct = '', initialTariff = '', initialQuantity = '') {
     const card = node('section', 'line-item');
     const top = node('div', 'line-head');
     const caption = node('h2', 'line-title');
@@ -238,6 +270,7 @@ if (form) {
     entries.set(card,{record, get amount(){ return amount; }, get selected(){return Boolean(activeProduct);}});
     lines.append(card);
     if (productById.has(initialProduct)) product.value = initialProduct;
+    if (quantity && /^\d{1,10}$/.test(initialQuantity) && Number(initialQuantity) <= 1000000000) quantity.value = initialQuantity;
     updateRates(initialTariff);
     changeOrdinals();
     return product;
@@ -262,7 +295,7 @@ if (form) {
     lines.replaceChildren();
     makeLine().focus();
   });
-  makeLine(params.get('product') ?? '',params.get('tariff') ?? '');
+  makeLine(params.get('product') ?? '',params.get('tariff') ?? '',params.get('quantity') ?? '');
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -279,11 +312,17 @@ if (form) {
     const submit = form.querySelector('[type="submit"]');
     submit.disabled = true;
     try {
+      const items = [...lines.children].map(card => entries.get(card).record());
       const id = await savePrintRequest({
-        contact:{name,phone}, items:[...lines.children].map(card => entries.get(card).record()),
+        contact:{name,phone}, items,
         notes:form.elements.comment.value.trim(), status:'new', totals:updateTotal(),
         createdAt:new Date().toISOString(),
       });
+      if (copyBrief) {
+        const details = items.map(item => [item.product,...item.specs.map(spec => spec.label+' — '+spec.value)].join('\n'));
+        savedBrief = ['Добрый день! Подскажите стоимость заказа.',...details,form.elements.comment.value.trim()]
+          .filter(Boolean).join('\n\n');
+      }
       form.hidden = true;
       done.hidden = false;
       const title = document.querySelector('#order-done-title');
