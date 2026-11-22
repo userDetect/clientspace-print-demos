@@ -1,7 +1,7 @@
 # Азбука рекламы · концепт ClientSpace
 
-- [Демо сайта](https://userdetect.github.io/clientspace-print-azbyka/)
-- [Демо CRM](https://userdetect.github.io/clientspace-print-azbyka/crm.html)
+- [Демо сайта](https://userdetect.github.io/clientspace-print-demos/demos/azbyka/)
+- [Демо CRM](https://userdetect.github.io/clientspace-print-demos/demos/azbyka/crm.html)
 - [Действующий сайт](https://azbyka-reklami.wixsite.com/azbyka-reklami)
 
 Форма и CRM используют IndexedDB. Созданные в демо заявки и файлы хранятся в браузере. Сравнивать форму и CRM нужно в одном браузерном профиле.

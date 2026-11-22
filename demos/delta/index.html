@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-layout="studio">
+<html lang="ru" data-layout="studio" data-scene-layout="plate" data-company="delta">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,10 @@
 <meta name="print-demo-id" content="delta">
 <title>Дельта — Типография и вывески</title>
 <link rel="stylesheet" href="site.css">
-<style>:root{--brand:#344d8c}</style>
+<link rel="stylesheet" href="experience.css">
+<style>:root{--brand:#344d8c;--scene-field:#252f51;--scene-paper:#ebeff6;--scene-ink:#243347;--scene-accent:#adbfff}</style>
 <script src="site.js" type="module"></script>
+<script src="experience.js" type="module"></script>
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
@@ -17,17 +19,115 @@
 <a class="brand" href="index.html"><span aria-hidden="true">Д</span>Дельта</a>
 <nav class="main-nav" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Что подготовить для заказа</a></nav>
 <a class="button compact nav-cta" href="order.html">Заявка</a>
-<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Что подготовить для заказа</a><a href="order.html">Оставить заявку</a></nav></details>
+<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="catalog.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Каталог</a><a href="pricing.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M6 4h12v16H6zM9 8h6m-6 4h6m-6 4h4" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Цены</a><a href="guide.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h6l2 2 2-2h6v13h-6l-2 2-2-2H4zm8 2v13" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Информация</a><a href="order.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h16v12H9l-5 3zm4 4h8m-8 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Заявка</a></nav></details>
 </div></header>
-<main id="main"><section class="hero"><div class="shell hero-inner">
-<div class="hero-copy"><p class="eyebrow">Типография и вывески · Богородск</p><h1>Дельта</h1>
+<main id="main"><section class="hero motion-hero" aria-labelledby="hero-title"><div class="shell hero-inner">
+<div class="hero-copy"><p class="eyebrow">Типография и вывески · Богородск</p><h1 id="hero-title">Дельта</h1>
 <p class="hero-lead">Дизайн, полиграфия и вывески в Богородске</p><div class="actions"><a href="catalog.html" class="button">Открыть каталог</a><a href="order.html" class="button secondary">Запросить расчёт</a></div>
-</div><figure class="hero-media"><img src="assets/5661771f70b9767be48a760c.webp" alt="Логотип рекламного агентства «Дельта»" fetchpriority="high"><figcaption>Логотип рекламного агентства «Дельта»</figcaption></figure></div></section>
-<section class="shell section"><div class="heading-row"><div class="section-title"><h2>Изделия и услуги</h2></div><a href="catalog.html" class="text-action">Весь каталог</a></div>
-<div class="scroll-chips"><a href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" class="">Печать</a><a href="catalog.html?group=%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0" class="">Реклама</a><a href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8" class="">Подарки</a></div><div class="product-grid"><a class="product-card " href="product-p1.html"><span class="product-category">Печать</span><h3>Полиграфия</h3><p>Подготовьте формат, тираж и срок. Если файл готов, приложите его к запросу для разговора о производстве.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p2.html"><span class="product-category">Реклама</span><h3>Вывески</h3><p>Для первичного запроса приложите фотографию фасада, укажите предполагаемые размеры надписи и адрес объекта.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p3.html"><span class="product-category">Подарки</span><h3>Сувениры</h3><p>Для запроса по кружкам или магнитам укажите количество, надпись или изображение и желаемую дату.</p><span class="text-action">Открыть</span></a></div></section>
-<div class="shell"><aside class="lead-note"><div><h2>Запрос на изготовление вывески</h2><p>Добавьте фото места размещения, подходящий размер и эскиз или описание вывески. Эти данные нужны для первого разговора о конструкции, её креплении и сроке.</p></div><a href="guide.html" class="button secondary">Что подготовить для заказа</a></aside></div>
+</div><figure class="motion-figure">
+<div class="motion-art" aria-hidden="true" data-scene="delta"><svg class="rg-delta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="rg-delta-stage" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e6e9f3"/><stop offset="1" stop-color="#adbde5"/>
+    </linearGradient>
+    <linearGradient id="rg-delta-panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f1f2ed"/><stop offset=".58" stop-color="#faf3e9"/><stop offset="1" stop-color="#dfdbdc"/>
+    </linearGradient>
+    <linearGradient id="rg-delta-ink" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#243955"/><stop offset="1" stop-color="#566eb6"/>
+    </linearGradient>
+    <linearGradient id="rg-delta-squeegee" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffd5bc"/><stop offset="1" stop-color="#d68b81"/>
+    </linearGradient>
+    <pattern id="rg-delta-grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0v26" fill="none" stroke="#586c9f" stroke-opacity=".22" stroke-width="1"/>
+    </pattern>
+    <filter id="rg-delta-drop" x="-25%" y="-35%" width="150%" height="185%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="17" stdDeviation="17" flood-color="#26345c" flood-opacity=".25"/>
+    </filter>
+    <filter id="rg-delta-lift" x="-35%" y="-40%" width="180%" height="210%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#253354" flood-opacity=".27"/>
+    </filter>
+    <clipPath id="rg-delta-transfer" clipPathUnits="userSpaceOnUse">
+      <rect class="rg-delta-wipe" x="155" y="218" width="490" height="167"/>
+    </clipPath>
+  </defs>
+  <style>
+    .motion-art[data-playing="true"] .rg-delta .rg-delta-holder{animation:rg-delta-set 3.65s cubic-bezier(.22,.66,.32,1) both;transform-origin:400px 306px}
+    .motion-art[data-playing="true"] .rg-delta .rg-delta-wipe{animation:rg-delta-reveal 3.65s cubic-bezier(.32,.06,.61,.95) both;transform-origin:155px 218px}
+    .motion-art[data-playing="true"] .rg-delta .rg-delta-tool{animation:rg-delta-press 3.65s cubic-bezier(.32,.06,.61,.95) both;transform-origin:637px 340px}
+    .motion-art[data-playing="true"] .rg-delta .rg-delta-mask{animation:rg-delta-peel 3.65s cubic-bezier(.22,.66,.32,1) both;transform-origin:654px 243px}
+    .motion-art[data-playing="true"] .rg-delta .rg-delta-check{animation:rg-delta-mark 3.65s ease-out both}
+    @keyframes rg-delta-set{0%{opacity:0;transform:translate(42px,48px) rotate(-5deg)}27%,100%{opacity:1;transform:none}}
+    @keyframes rg-delta-reveal{0%,24%{transform:scaleX(0)}72%,100%{transform:scaleX(1)}}
+    @keyframes rg-delta-press{0%,13%{opacity:0;transform:translate(-492px,-61px) rotate(-12deg)}24%{opacity:1;transform:translate(-480px,0)}72%{opacity:1;transform:none}92%,100%{opacity:0;transform:translate(75px,-22px) rotate(13deg)}}
+    @keyframes rg-delta-peel{0%,55%{opacity:0;transform:scaleX(.12)}66%{opacity:.78}91%,100%{opacity:0;transform:translate(77px,-63px) skewY(-21deg) scaleX(.56)}}
+    @keyframes rg-delta-mark{0%,78%{opacity:0}100%{opacity:.75}}
+    @media(prefers-reduced-motion:reduce){.motion-art[data-playing="true"] .rg-delta *{animation:none!important}}
+  </style>
+  <rect x="26" y="27" width="748" height="546" rx="17" fill="url(#rg-delta-stage)"/>
+  <path d="M48 50h704v500H48z" fill="url(#rg-delta-grid)" stroke="#506898" stroke-opacity=".61"/>
+  <path d="M105 158v-30h30m530 0h30v30m0 285v30h-30m-530 0h-30v-30" fill="none" stroke="#566b9c" stroke-width="1.5" stroke-opacity=".64"/>
+  <g fill="none" stroke="#4d6592" stroke-width="1" stroke-opacity=".68">
+    <path d="M112 111h576m-540-5v10m506-10v10m-541 328h574"/>
+    <path d="M61 70h16m-8-8v16m654-8h16m-8-8v16M61 530h16m-8-8v16m654-8h16m-8-8v16"/>
+  </g>
+  <ellipse cx="412" cy="437" rx="277" ry="49" fill="#2e416e" opacity=".12"/>
+  <g transform="rotate(-8 400 305)">
+    <g class="rg-delta-holder">
+      <g filter="url(#rg-delta-drop)">
+        <rect x="107" y="182" width="585" height="240" rx="14" fill="#334572"/>
+        <rect x="107" y="170" width="585" height="240" rx="14" fill="#657eaa"/>
+        <rect x="116" y="178" width="568" height="223" rx="9" fill="url(#rg-delta-panel)" stroke="#c1bfd1" stroke-width="2"/>
+        <rect x="129" y="191" width="541" height="197" rx="5" fill="none" stroke="#7788ac" stroke-opacity=".57"/>
+        <path d="M131 228v-33h35m467 0h33v33m0 124v32h-33m-467 0h-35v-32" fill="none" stroke="#6680ad" stroke-opacity=".6" stroke-dasharray="4 4"/>
+        <g fill="#6d7c9c" stroke="#fdfeff" stroke-width="1.1">
+          <circle cx="126" cy="188" r="4"/><circle cx="674" cy="188" r="4"/><circle cx="126" cy="392" r="4"/><circle cx="674" cy="392" r="4"/>
+        </g>
+      </g>
+      <g clip-path="url(#rg-delta-transfer)">
+        <path d="M166 335l56-97h72l76 127h-70l-45-76-31 53h44l14 23H158z" fill="url(#rg-delta-ink)"/>
+        <path d="M220 239h74l17 29h-108z" fill="#6979b6"/>
+        <path d="M265 278l26 44h-45z" fill="#efb395"/>
+        <text x="369" y="322" fill="#263756" font-family="Arial, sans-serif" font-size="63" font-weight="700" letter-spacing="-3.5">Дельта</text>
+        <rect x="374" y="353" width="22" height="3" fill="#ca8f80"/>
+        <rect x="403" y="353" width="59" height="3" fill="#8b98bd"/>
+      </g>
+      <path class="rg-delta-mask" d="M566 218h76q-11 38 8 137l-58-12q-18-63-26-125z" fill="#fef9e9" stroke="#526991" stroke-width="1.4" opacity="0"/>
+      <g class="rg-delta-tool" opacity="0" filter="url(#rg-delta-lift)">
+        <path d="M629 242q1-6 7-6h29q9 0 10 8l13 105q1 9-8 9h-29q-9 0-10-9z" fill="url(#rg-delta-squeegee)" stroke="#965f62" stroke-width="1.7"/>
+        <path d="M642 246l15 105m-9-106 15 106" stroke="#824f5f" opacity=".6" stroke-width="1.4"/>
+        <path d="M626 244l12-5 18 112-12 4z" fill="#6b5673"/>
+        <path d="M659 254l11 76" stroke="#f7dfcf" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <g class="rg-delta-check" fill="none" stroke="#7188b3" stroke-width="1.3" opacity=".75">
+        <path d="M147 216h19m-19 0v19m505-19h-19m19 0v19m-505 139h19m-19 0v-19m505 19h-19m19 0v-19"/>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(551 479) rotate(-5)" filter="url(#rg-delta-lift)">
+    <path d="M0 0h29v39H0z" fill="#405786"/>
+    <path d="M30 0h29v39H30z" fill="#7388be"/>
+    <path d="M60 0h29v39H60z" fill="#e3a58d"/>
+    <path d="M90 0h29v39H90z" fill="#f1e5df"/>
+    <path d="M-7 33h133v10H-7z" fill="#fbf1e8" stroke="#a4a6bd"/>
+  </g>
+</svg></div>
+<figcaption class="scene-caption"><span class="scene-subject">Перенос графики на вывеску</span>
+<button class="scene-replay" type="button" aria-label="Повторить анимацию" hidden><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 11a7 7 0 1 1 1.9 5.5M5 5v6h6" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button></figcaption>
+</figure></div></section>
+<section class="shell section deck-section" aria-labelledby="home-catalog">
+<div class="heading-row"><h2 id="home-catalog">Каталог</h2><a href="catalog.html" class="text-action">Весь каталог</a></div>
+<div class="catalog-deck" data-deck><a class="deck-card" href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" style="--card-angle:-4deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Печать</h3><p>Полиграфия, Подарочная продукция</p></div></a><a class="deck-card" href="catalog.html?group=%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0" style="--card-angle:5deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Реклама</h3><p>Вывески</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8" style="--card-angle:-6deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Подарки</h3><p>Сувениры</p></div></a></div></section>
+<div class="shell material-note" data-reveal><aside class="lead-note"><div><h2>Запрос на изготовление вывески</h2><p>Добавьте фото места размещения, подходящий размер и эскиз или описание вывески. Эти данные нужны для первого разговора о конструкции, её креплении и сроке.</p></div><a href="guide.html" class="button secondary">Что подготовить для заказа</a></aside></div>
 
-<section class="shell section"><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
+<section class="shell section flow-section" aria-labelledby="flow-title">
+<header class="section-title"><h2 id="flow-title">Как оформить заказ</h2></header>
+<ol class="order-flow" data-flow><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M4 5h7v6H4zM13 5h7v6h-7zM4 13h7v6H4zM13 13h7v6h-7z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Выберите конструкцию</h3><p>Изучите варианты вывесок, букв и оформления.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M5 5h14v14H5zM9 5v4m3-4v2m3-2v4M5 12h4m-4 3h2" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Опишите объект</h3><p>Добавьте габариты, место размещения и параметры из брифа.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6m-6 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Приложите материалы</h3><p>Подойдут логотип, эскиз или фотография фасада.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M20 11v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h5m-3 9 3 3 7-8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Запросите расчёт</h3><p>Стоимость зависит от конструкции, условий изготовления и монтажа.</p></li></ol></section>
+<section class="shell section" data-reveal><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
 <a href="pricing.html" class="button secondary">К расчёту</a></div></section>
 <section id="contacts" class="shell section"><div class="section-title"><h2>Контакты</h2></div><div class="contact-grid"><a class="contact" href="tel:+79625110918"><span>Телефон</span><strong>+7 (962) 511-09-18</strong></a><a class="contact" href="https://telegram.me/%2B79625110918"><span>Telegram</span><strong>Открыть</strong></a><a class="contact" href="https://wa.me/79625110918"><span>WhatsApp</span><strong>Открыть</strong></a><div class="contact"><span>Адрес</span><strong>Богородск, ул. Ленина, 151</strong></div></div></section></main>
 <footer class="footer"><div class="shell footer-inner"><div><strong>Дельта</strong><p>Богородск · Типография и вывески</p></div><nav aria-label="Полезные ссылки"><a href="catalog.html" class="">Каталог</a><a href="pricing.html" class="">Цены и расчёт</a><a href="guide.html" class="">Что подготовить для заказа</a><a href="order.html" class="">Оставить заявку</a></nav>

@@ -1,7 +1,7 @@
 # 2 Аякса · концепт ClientSpace
 
-- [Демо сайта](https://userdetect.github.io/clientspace-print-ajaxs/)
-- [Демо CRM](https://userdetect.github.io/clientspace-print-ajaxs/crm.html)
+- [Демо сайта](https://userdetect.github.io/clientspace-print-demos/demos/ajaxs/)
+- [Демо CRM](https://userdetect.github.io/clientspace-print-demos/demos/ajaxs/crm.html)
 - [Действующий сайт](https://2ajaxs.com/)
 
 Форма и CRM используют IndexedDB. Созданные в демо заявки и файлы хранятся в браузере. Сравнивать форму и CRM нужно в одном браузерном профиле.

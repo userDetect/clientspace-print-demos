@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-layout="book">
+<html lang="ru" data-layout="book" data-scene-layout="folio" data-company="vyksa">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,10 @@
 <meta name="print-demo-id" content="vyksa">
 <title>Выксунская типография — Типография и издательство</title>
 <link rel="stylesheet" href="site.css">
-<style>:root{--brand:#2d506b}</style>
+<link rel="stylesheet" href="experience.css">
+<style>:root{--brand:#2d506b;--scene-field:#e0e8ea;--scene-paper:#eef3f3;--scene-ink:#253d42;--scene-accent:#386b7c}</style>
 <script src="site.js" type="module"></script>
+<script src="experience.js" type="module"></script>
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
@@ -17,17 +19,136 @@
 <a class="brand" href="index.html"><span aria-hidden="true">В</span>Выксунская типография</a>
 <nav class="main-nav" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Книжное и газетное производство</a></nav>
 <a class="button compact nav-cta" href="order.html">Заявка</a>
-<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Книжное и газетное производство</a><a href="order.html">Оставить заявку</a></nav></details>
+<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="catalog.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Каталог</a><a href="pricing.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M6 4h12v16H6zM9 8h6m-6 4h6m-6 4h4" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Цены</a><a href="guide.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h6l2 2 2-2h6v13h-6l-2 2-2-2H4zm8 2v13" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Информация</a><a href="order.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h16v12H9l-5 3zm4 4h8m-8 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Заявка</a></nav></details>
 </div></header>
-<main id="main"><section class="hero"><div class="shell hero-inner">
-<div class="hero-copy"><p class="eyebrow">Типография и издательство · Выкса</p><h1>Выксунская типография</h1>
+<main id="main"><section class="hero motion-hero" aria-labelledby="hero-title"><div class="shell hero-inner">
+<div class="hero-copy"><p class="eyebrow">Типография и издательство · Выкса</p><h1 id="hero-title">Выксунская типография</h1>
 <p class="hero-lead">Книги и газеты от подготовки макета до тиража</p><div class="actions"><a href="catalog.html" class="button">Открыть каталог</a><a href="order.html" class="button secondary">Запросить расчёт</a></div>
-</div><figure class="hero-media illustration" aria-hidden="true"><div class="ink-stack"><i></i><i></i><i></i><strong>ВЫ</strong></div><span class="registration-marker"></span></figure></div></section>
-<section class="shell section"><div class="heading-row"><div class="section-title"><h2>Изделия и услуги</h2></div><a href="catalog.html" class="text-action">Весь каталог</a></div>
-<div class="scroll-chips"><a href="catalog.html?group=%D0%98%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE" class="">Издательство</a><a href="catalog.html?group=%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0" class="">Периодика</a><a href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" class="">Печать</a><a href="catalog.html?group=%D0%94%D0%BB%D1%8F%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B9" class="">Для организаций</a><a href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" class="">Подготовка и обработка</a></div><div class="product-grid"><a class="product-card " href="product-p1.html"><span class="product-category">Издательство</span><h3>Книги</h3><p>Тиражи от одного экземпляра. Возможен чёрно-белый или цветной блок на офсетной, мелованной или дизайнерской бумаге. Выберите переплёт или оставьте это на согласование.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p2.html"><span class="product-category">Периодика</span><h3>Газеты</h3><p>Газетные тиражи от 500 экземпляров. По странице производства доступны бумаги от 45 до 80 г/м², возможны скоба и обложка из лёгкой мелованной бумаги.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p3.html"><span class="product-category">Печать</span><h3>Рекламная полиграфия</h3><p>Листовки, плакаты, визитки и буклеты. Ламинирование, вырубка, тиснение и конгрев.</p><span class="text-action">Открыть</span></a></div></section>
-<div class="shell"><aside class="lead-note"><div><h2>Спецификация книги</h2><p>Типография печатает книги от одного экземпляра. Для расчёта укажите формат, число страниц, тираж, цветность, бумагу и тип переплёта. В собственном цехе делают твёрдый и мягкий переплёт, а также сборку на пружину или скобу.</p></div><a href="guide.html" class="button secondary">Книжное и газетное производство</a></aside></div>
+</div><figure class="motion-figure">
+<div class="motion-art" aria-hidden="true" data-scene="vyksa"><svg class="rg-vyksa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="rg-vyksa-desk" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#acc6c9"/><stop offset="1" stop-color="#66878b"/>
+    </linearGradient>
+    <linearGradient id="rg-vyksa-steel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#d5ddd6"/><stop offset=".35" stop-color="#9db3ab"/><stop offset=".52" stop-color="#8ca59e"/><stop offset="1" stop-color="#537478"/>
+    </linearGradient>
+    <linearGradient id="rg-vyksa-roller" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#506a73"/><stop offset=".46" stop-color="#adbbb4"/><stop offset=".68" stop-color="#52737a"/><stop offset="1" stop-color="#233e4f"/>
+    </linearGradient>
+    <linearGradient id="rg-vyksa-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fcf5dc"/><stop offset=".49" stop-color="#f6eddb"/><stop offset="1" stop-color="#d4cdb8"/>
+    </linearGradient>
+    <linearGradient id="rg-vyksa-shade">
+      <stop stop-color="#544e49" stop-opacity=".26"/><stop offset="1" stop-color="#544e49" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="rg-vyksa-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0v28" fill="none" stroke="#355560" stroke-opacity=".24" stroke-width="1"/>
+    </pattern>
+    <pattern id="rg-vyksa-lines" width="65" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 1h65M0 3h58" stroke="#27444b" stroke-opacity=".65" stroke-width=".72"/>
+    </pattern>
+    <filter id="rg-vyksa-drop" x="-35%" y="-40%" width="170%" height="200%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#1d3444" flood-opacity=".3"/>
+    </filter>
+    <filter id="rg-vyksa-lift" x="-22%" y="-28%" width="144%" height="169%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#2b464b" flood-opacity=".24"/>
+    </filter>
+    <clipPath id="rg-vyksa-feed">
+      <path d="M153 229h498v308H153z"/>
+    </clipPath>
+    <g id="rg-vyksa-paper-art">
+      <path d="M0 0h206v250H0z" fill="url(#rg-vyksa-paper)" stroke="#c9c3ac" stroke-width="1"/>
+      <path d="M11 13h184m-184 1h184" stroke="#435361" stroke-opacity=".79" stroke-width="1"/>
+      <text x="15" y="55" fill="#24404b" font-family="Georgia,serif" font-size="39" font-weight="700" letter-spacing=".2">ВЫКСА</text>
+      <path d="M11 65h184m-184 4h184" stroke="#435761" stroke-width="1.3"/>
+      <path d="M13 77h180v75H13z" fill="#6d9291"/>
+      <path d="M13 139c39-15 65-30 99-26 35 4 49-10 81-20v59H13z" fill="#b0bab0"/>
+      <path d="M14 148l26-14v-20l12-10 16 9v16l20 2V97l13-12 14 11v20l16 1v-18l11-7 8 7v19l17 2 8-9 17 11v30H14z" fill="#456976"/>
+      <path d="M13 147c42-3 63-11 94-14s65 10 86 4v15H13z" fill="#b3bda9" opacity=".66"/>
+      <g fill="#d6d6b9" opacity=".72"><path d="M46 119h6v8h-6zm12 0h4v8h-4zm38-17h5v9h-5zm9 0h5v9h-5zm32 1h4v7h-4zm40 19h5v6h-5z"/></g>
+      <path d="M13 160h55v70H13zm61 0h55v70H74zm62 0h57v70h-57z" fill="url(#rg-vyksa-lines)"/>
+      <path d="M12 239h182" stroke="#78918e" stroke-width="1"/>
+      <path d="M68 159h1v70h-1zm61 0h1v70h-1z" fill="#c5c1ab"/>
+    </g>
+  </defs>
+  <style>
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-web{animation:rg-vyksa-scroll 3.8s cubic-bezier(.22,.61,.36,1) both}
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-roller-mark{animation:rg-vyksa-rotate 3.8s linear both}
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-leaf{animation:rg-vyksa-fold 3.8s cubic-bezier(.45,.05,.41,.98) both;transform-origin:407px 322px}
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-inside{animation:rg-vyksa-inner 3.8s steps(1,end) both}
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-cover{animation:rg-vyksa-outer 3.8s steps(1,end) both}
+    .motion-art[data-playing="true"] .rg-vyksa .rg-vyksa-proof{animation:rg-vyksa-stack 3.8s cubic-bezier(.22,.61,.36,1) both;transform-origin:583px 382px}
+    @keyframes rg-vyksa-scroll{0%,8%{transform:translateY(-245px)}54%,100%{transform:none}}
+    @keyframes rg-vyksa-rotate{0%{transform:translateY(-5px);opacity:0}11%{opacity:.72}49%{transform:translateY(11px)}56%,100%{transform:none;opacity:.65}}
+    @keyframes rg-vyksa-fold{0%,54%{transform:none}71%{transform:scaleX(.015) skewY(-3deg)}93%,100%{transform:scaleX(-1)}}
+    @keyframes rg-vyksa-inner{0%{opacity:1}71%,100%{opacity:0}}
+    @keyframes rg-vyksa-outer{0%{opacity:0}71%,100%{opacity:1}}
+    @keyframes rg-vyksa-stack{0%,63%{opacity:0;transform:translate(86px,40px) rotate(13deg)}96%,100%{opacity:1;transform:none}}
+    @media(prefers-reduced-motion:reduce){.motion-art[data-playing="true"] .rg-vyksa *{animation:none!important}}
+  </style>
+  <rect x="26" y="27" width="748" height="546" rx="17" fill="url(#rg-vyksa-desk)"/>
+  <path d="M49 51h702v498H49z" fill="url(#rg-vyksa-grid)" stroke="#42616a" stroke-opacity=".7"/>
+  <path d="M61 70h16m-8-8v16m654-8h16m-8-8v16M61 530h16m-8-8v16m654-8h16m-8-8v16" fill="none" stroke="#365763" stroke-opacity=".76"/>
+  <ellipse cx="417" cy="494" rx="288" ry="36" fill="#2a4552" opacity=".17"/>
+  <g transform="translate(-6 -1) rotate(-9 398 307)">
+    <g filter="url(#rg-vyksa-drop)">
+      <path d="M146 127h519v129H146z" fill="#4c6871" stroke="#617c84" stroke-width="2"/>
+      <path d="M153 140h505v111H153z" fill="#223f50"/>
+    </g>
+    <g clip-path="url(#rg-vyksa-feed)">
+      <g class="rg-vyksa-web">
+        <use href="#rg-vyksa-paper-art" x="201" y="229"/>
+        <path d="M397 230h10v249h-10z" fill="url(#rg-vyksa-shade)" opacity=".72"/>
+        <g class="rg-vyksa-leaf" style="transform:scaleX(-1);transform-origin:407px 322px">
+          <g class="rg-vyksa-inside" opacity="0">
+            <path d="M407 229h206v250H407z" fill="url(#rg-vyksa-paper)" stroke="#cfc8b3"/>
+            <path d="M423 243h173v53H423zm-1 62h51v132h-51zm62 0h53v132h-53zm66 0h46v132h-46z" fill="url(#rg-vyksa-lines)"/>
+            <path d="M422 450h177m-177-207h177" stroke="#708b84" stroke-width=".8"/>
+          </g>
+          <g class="rg-vyksa-cover" transform="translate(814 0) scale(-1 1)">
+            <use href="#rg-vyksa-paper-art" x="201" y="229"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g filter="url(#rg-vyksa-lift)">
+      <rect x="125" y="111" width="552" height="94" rx="9" fill="url(#rg-vyksa-steel)" stroke="#557276" stroke-width="2"/>
+      <path d="M135 132h532v49H135z" fill="#182f3f" stroke="#4c656e" stroke-width="2"/>
+      <rect x="155" y="137" width="492" height="36" rx="15" fill="url(#rg-vyksa-roller)"/>
+      <path class="rg-vyksa-roller-mark" d="M173 150h452m-446 4h443" fill="none" stroke="#e3e5d1" stroke-width="1.5" opacity=".65"/>
+      <path d="M147 187h508m-508 5h508" stroke="#c5d0c4" stroke-width="1.4"/>
+      <path d="M181 205h442v22H181z" fill="#5f7d7e" stroke="#afc3b9" stroke-width="1.4"/>
+      <path d="M192 216h416" stroke="#d9dcc9" stroke-width="1.3"/>
+      <g fill="#284754" stroke="#c0cbc2" stroke-width="1.5"><circle cx="143" cy="155" r="11"/><circle cx="659" cy="155" r="11"/></g>
+      <g fill="#d6c796"><circle cx="143" cy="155" r="3"/><circle cx="659" cy="155" r="3"/></g>
+    </g>
+  </g>
+  <g class="rg-vyksa-proof">
+    <g transform="translate(486 278) rotate(11 106 130)" filter="url(#rg-vyksa-lift)">
+      <path d="M6 13h205v250H6zm-5-5h205v250H1z" fill="#bcbaaa" stroke="#8d9b93" stroke-width="1.5"/>
+      <path d="M3 253h199m-193 4h196m-195 4h196" stroke="#e4dfc6" stroke-width="1" opacity=".87"/>
+      <use href="#rg-vyksa-paper-art"/>
+    </g>
+  </g>
+</svg></div>
+<figcaption class="scene-caption"><span class="scene-subject">Печать и фальцовка газеты</span>
+<button class="scene-replay" type="button" aria-label="Повторить анимацию" hidden><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 11a7 7 0 1 1 1.9 5.5M5 5v6h6" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button></figcaption>
+</figure></div></section>
+<section class="shell section deck-section" aria-labelledby="home-catalog">
+<div class="heading-row"><h2 id="home-catalog">Каталог</h2><a href="catalog.html" class="text-action">Весь каталог</a></div>
+<div class="catalog-deck" data-deck><a class="deck-card" href="catalog.html?group=%D0%98%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE" style="--card-angle:-4deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Издательство</h3><p>Книги</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9F%D0%B5%D1%80%D0%B8%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0" style="--card-angle:5deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Периодика</h3><p>Газеты</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" style="--card-angle:-6deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Печать</h3><p>Рекламная полиграфия</p></div></a><a class="deck-card" href="catalog.html?group=%D0%94%D0%BB%D1%8F%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B9" style="--card-angle:4deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Для организаций</h3><p>Бланочная продукция</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" style="--card-angle:-5deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Подготовка и обработка</h3><p>Вёрстка и макеты</p></div></a></div></section>
+<div class="shell material-note" data-reveal><aside class="lead-note"><div><h2>Спецификация книги</h2><p>Типография печатает книги от одного экземпляра. Для расчёта укажите формат, число страниц, тираж, цветность, бумагу и тип переплёта. В собственном цехе делают твёрдый и мягкий переплёт, а также сборку на пружину или скобу.</p></div><a href="guide.html" class="button secondary">Книжное и газетное производство</a></aside></div>
 
-<section class="shell section"><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
+<section class="shell section flow-section" aria-labelledby="flow-title">
+<header class="section-title"><h2 id="flow-title">Как оформить заказ</h2></header>
+<ol class="order-flow" data-flow><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M4 5h7v6H4zM13 5h7v6h-7zM4 13h7v6H4zM13 13h7v6h-7z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Определите издание</h3><p>Выберите книгу, брошюру или другое изделие в каталоге.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M5 5h14v14H5zM9 5v4m3-4v2m3-2v4M5 12h4m-4 3h2" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Соберите параметры</h3><p>Формат, число полос, бумага, переплёт и тираж.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6m-6 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Подготовьте материалы</h3><p>К запросу можно добавить вёрстку или материалы для обсуждения.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M20 11v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h5m-3 9 3 3 7-8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Согласуйте тираж</h3><p>Типография уточнит технологию, стоимость и срок.</p></li></ol></section>
+<section class="shell section" data-reveal><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
 <a href="pricing.html" class="button secondary">К расчёту</a></div></section>
 <section id="contacts" class="shell section"><div class="section-title"><h2>Контакты</h2></div><div class="contact-grid"><a class="contact" href="tel:+79103802829"><span>Телефон</span><strong>+7 (910) 380-28-29</strong></a><a class="contact" href="mailto:hello@vyksaprint.ru"><span>Почта</span><strong>hello@vyksaprint.ru</strong></a><div class="contact"><span>Адрес</span><strong>Выкса, ул. Вавилина, 10</strong></div></div></section></main>
 <footer class="footer"><div class="shell footer-inner"><div><strong>Выксунская типография</strong><p>Выкса · Типография и издательство</p></div><nav aria-label="Полезные ссылки"><a href="catalog.html" class="">Каталог</a><a href="pricing.html" class="">Цены и расчёт</a><a href="guide.html" class="">Книжное и газетное производство</a><a href="order.html" class="">Оставить заявку</a></nav>

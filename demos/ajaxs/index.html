@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-layout="studio">
+<html lang="ru" data-layout="studio" data-scene-layout="poster" data-company="ajaxs">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,10 @@
 <meta name="print-demo-id" content="ajaxs">
 <title>2 Аякса — Типография</title>
 <link rel="stylesheet" href="site.css">
-<style>:root{--brand:#644bb0}</style>
+<link rel="stylesheet" href="experience.css">
+<style>:root{--brand:#644bb0;--scene-field:#302146;--scene-paper:#f2edf6;--scene-ink:#332448;--scene-accent:#d6adf2}</style>
 <script src="site.js" type="module"></script>
+<script src="experience.js" type="module"></script>
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
@@ -17,17 +19,137 @@
 <a class="brand" href="index.html"><span aria-hidden="true">2</span>2 Аякса</a>
 <nav class="main-nav" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Идея, производство и доставка</a></nav>
 <a class="button compact nav-cta" href="order.html">Заявка</a>
-<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="catalog.html">Каталог</a><a href="pricing.html">Цены и расчёт</a><a href="guide.html">Идея, производство и доставка</a><a href="order.html">Оставить заявку</a></nav></details>
+<details class="mobile-nav"><summary aria-label="Открыть меню"><i></i><i></i></summary><nav aria-label="Разделы сайта"><a href="catalog.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Каталог</a><a href="pricing.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M6 4h12v16H6zM9 8h6m-6 4h6m-6 4h4" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Цены</a><a href="guide.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h6l2 2 2-2h6v13h-6l-2 2-2-2H4zm8 2v13" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Информация</a><a href="order.html"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M4 5h16v12H9l-5 3zm4 4h8m-8 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg>Заявка</a></nav></details>
 </div></header>
-<main id="main"><section class="hero"><div class="shell hero-inner">
-<div class="hero-copy"><p class="eyebrow">Типография · Саров</p><h1>2 Аякса</h1>
+<main id="main"><section class="hero motion-hero" aria-labelledby="hero-title"><div class="shell hero-inner">
+<div class="hero-copy"><p class="eyebrow">Типография · Саров</p><h1 id="hero-title">2 Аякса</h1>
 <p class="hero-lead">Оперативная полиграфия, сувениры и широкоформатная печать в Сарове</p><div class="actions"><a href="catalog.html" class="button">Открыть каталог</a><a href="order.html" class="button secondary">Запросить расчёт</a></div>
-</div><figure class="hero-media"><img src="assets/photo-1.webp" alt="Работа из портфолио 2 Аякса" fetchpriority="high"><figcaption>Работа из портфолио 2 Аякса</figcaption></figure></div></section>
-<section class="shell section"><div class="heading-row"><div class="section-title"><h2>Изделия и услуги</h2></div><a href="catalog.html" class="text-action">Весь каталог</a></div>
-<div class="scroll-chips"><a href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" class="">Печать</a><a href="catalog.html?group=%D0%9D%D0%B0%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5" class="">Нанесение</a><a href="catalog.html?group=%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B8%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82" class="">Широкий формат</a><a href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" class="">Подготовка и обработка</a></div><div class="product-grid"><a class="product-card " href="product-p1.html"><img src="assets/18fbd91d9cff3e46b0830426.webp" alt="Оперативная полиграфия" loading="lazy"><span class="product-category">Печать</span><h3>Оперативная полиграфия</h3><p>Афиши, листовки, визитки и брошюры. Для заказа к мероприятию укажите формат, количество, способ печати или пожелания по бумаге и дату готовности.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p2.html"><img src="assets/fc01d722b71681fbba3fa363.webp" alt="Сувенирная продукция" loading="lazy"><span class="product-category">Нанесение</span><h3>Сувенирная продукция</h3><p>Магниты, ручки, кружки и футболки. В запрос добавьте тип изделия, цвет или размер, количество штук и файл с логотипом или эскизом.</p><span class="text-action">Открыть</span></a><a class="product-card " href="product-p3.html"><span class="product-category">Печать</span><h3>Бизнес-полиграфия</h3><p>Печати и штампы, бейджи, бланки и журналы.</p><span class="text-action">Открыть</span></a></div></section>
-<div class="shell"><aside class="lead-note"><div><h2>Собственная дизайн-студия</h2><p>Типография может помочь спроектировать внутреннее и наружное оформление. Если фирменный стиль уже готов, приложите исходные файлы. Если дизайна ещё нет, полезно указать назначение изделия и прислать примеры.</p></div><a href="guide.html" class="button secondary">Идея, производство и доставка</a></aside></div>
-<section class="shell section work"><div class="section-title"><h2>Примеры работ</h2></div><div class="gallery"><figure><img src="assets/photo-1.webp" alt="Работа из портфолио 2 Аякса" loading="lazy"><figcaption>Работа из портфолио 2 Аякса</figcaption></figure><figure><img src="assets/photo-2.webp" alt="Образец печати из портфолио" loading="lazy"><figcaption>Образец печати из портфолио</figcaption></figure><figure><img src="assets/photo-3.webp" alt="Пример продукции типографии" loading="lazy"><figcaption>Пример продукции типографии</figcaption></figure><figure><img src="assets/18fbd91d9cff3e46b0830426.webp" alt="Оперативная полиграфия" loading="lazy"><figcaption>Оперативная полиграфия</figcaption></figure><figure><img src="assets/fc01d722b71681fbba3fa363.webp" alt="Сувенирная продукция" loading="lazy"><figcaption>Сувенирная продукция</figcaption></figure><figure><img src="assets/c7df2b638d446799519c147a.webp" alt="Широкоформатная печать" loading="lazy"><figcaption>Широкоформатная печать</figcaption></figure></div></section>
-<section class="shell section"><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
+</div><figure class="motion-figure">
+<div class="motion-art" aria-hidden="true" data-scene="ajaxs"><svg class="rg-ajaxs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="rg-ajaxs-desk" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e6d7ee"/><stop offset=".55" stop-color="#c7b7db"/><stop offset="1" stop-color="#9d8dbb"/>
+    </linearGradient>
+    <linearGradient id="rg-ajaxs-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#5d4e7b"/><stop offset=".47" stop-color="#423554"/><stop offset="1" stop-color="#211a34"/>
+    </linearGradient>
+    <linearGradient id="rg-ajaxs-cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff7e8"/><stop offset=".57" stop-color="#f6ebde"/><stop offset="1" stop-color="#d8c7ca"/>
+    </linearGradient>
+    <linearGradient id="rg-ajaxs-print" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#6758a2"/><stop offset=".51" stop-color="#a884bf"/><stop offset="1" stop-color="#ee9b8a"/>
+    </linearGradient>
+    <radialGradient id="rg-ajaxs-glow">
+      <stop stop-color="#fca891" stop-opacity=".73"/><stop offset="1" stop-color="#fca891" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="rg-ajaxs-grid" width="23" height="23" patternUnits="userSpaceOnUse">
+      <path d="M23 0H0v23" stroke="#745f99" stroke-width=".9" stroke-opacity=".29" fill="none"/>
+    </pattern>
+    <pattern id="rg-ajaxs-weave" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 1h4M1 0v4" stroke="#755f81" stroke-opacity=".17" stroke-width=".4"/>
+    </pattern>
+    <filter id="rg-ajaxs-drop" x="-35%" y="-35%" width="170%" height="183%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#2d213c" flood-opacity=".25"/>
+    </filter>
+    <filter id="rg-ajaxs-lift" x="-24%" y="-29%" width="148%" height="177%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#322643" flood-opacity=".24"/>
+    </filter>
+    <path id="rg-ajaxs-shirt" d="M350 279l35-12q23 17 51 17 29 0 49-18l39 13 96 46-24 61-69-29 6 128q-92 22-200 0l7-128-68 29-29-60z"/>
+  </defs>
+  <style>
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-garment{animation:rg-ajaxs-load 3.72s cubic-bezier(.22,.61,.36,1) both;transform-origin:439px 382px}
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-handle{animation:rg-ajaxs-lever 3.72s cubic-bezier(.29,.23,.34,1) both;transform-origin:264px 179px}
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-head{animation:rg-ajaxs-close 3.72s cubic-bezier(.28,.15,.32,1) both}
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-cover{animation:rg-ajaxs-peel 3.72s cubic-bezier(.22,.61,.36,1) both;transform-origin:470px 375px}
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-ink{animation:rg-ajaxs-mark 3.72s ease-out both}
+    .motion-art[data-playing="true"] .rg-ajaxs .rg-ajaxs-warmth{animation:rg-ajaxs-warm 3.72s ease-out both}
+    @keyframes rg-ajaxs-load{0%,6%{opacity:0;transform:translate(72px,85px) rotate(14deg)}34%,100%{opacity:1;transform:none}}
+    @keyframes rg-ajaxs-lever{0%,25%{transform:none}47%,63%{transform:rotate(37deg)}83%,100%{transform:none}}
+    @keyframes rg-ajaxs-close{0%,29%{transform:none}48%,65%{transform:translateY(98px)}86%,100%{transform:none}}
+    @keyframes rg-ajaxs-peel{0%,23%{opacity:0;transform:translateY(-50px)}36%,70%{opacity:.8;transform:none}91%,100%{opacity:0;transform:translate(120px,-17px) rotate(-12deg) skewY(-9deg)}}
+    @keyframes rg-ajaxs-mark{0%,65%{opacity:0}78%,100%{opacity:1}}
+    @keyframes rg-ajaxs-warm{0%,47%{opacity:0}55%{opacity:.8}66%{opacity:.58}75%,100%{opacity:0}}
+    @media(prefers-reduced-motion:reduce){.motion-art[data-playing="true"] .rg-ajaxs *{animation:none!important}}
+  </style>
+  <rect x="26" y="27" width="748" height="546" rx="17" fill="url(#rg-ajaxs-desk)"/>
+  <path d="M47 49h706v502H47z" fill="url(#rg-ajaxs-grid)" stroke="#685481" stroke-opacity=".7"/>
+  <path d="M62 70h14m-7-7v14m656-7h14m-7-7v14M62 530h14m-7-7v14m656-7h14m-7-7v14" stroke="#725e90" stroke-width="1" fill="none"/>
+  <ellipse cx="406" cy="486" rx="270" ry="46" fill="#59476a" opacity=".24"/>
+  <g transform="rotate(-8 405 312)">
+    <g filter="url(#rg-ajaxs-drop)">
+      <path d="M113 318l477-29 89 122-17 45-473 36-76-125z" fill="#312543" stroke="#5c4c70" stroke-width="1.7"/>
+      <path d="M115 319l476-30 83 121-478 43z" fill="url(#rg-ajaxs-metal)" stroke="#645378" stroke-width="1.8"/>
+      <path d="M170 323l403-28 75 112-418 36z" fill="#a790b3" stroke="#8a719c" stroke-width="1.4"/>
+      <path d="M188 334l382-30 60 96-396 34z" fill="#c0a3c0"/>
+      <path d="M189 459l470-38m-446 50 436-34" stroke="#827092" stroke-opacity=".62" stroke-width="1.3"/>
+      <path d="M188 194h69l-3 147-70 6z" fill="#392c4d" stroke="#88729c" stroke-width="1.8"/>
+      <path d="M184 149h82v154l-15 39-67 5z" fill="url(#rg-ajaxs-metal)" stroke="#806a99" stroke-width="2"/>
+      <path d="M194 163h62v68h-62z" fill="#261e39" stroke="#62557c"/>
+      <rect x="205" y="175" width="40" height="21" rx="3" fill="#201934" stroke="#ae82ae" stroke-width="1"/>
+      <path d="M212 183h10m4 0h10m-24 6h10m4 0h10" stroke="#f2abb9" stroke-width="1.3" stroke-linecap="round"/>
+      <circle cx="212" cy="212" r="4" fill="#d1abc8"/><circle cx="226" cy="212" r="4" fill="#cd8599"/><circle cx="240" cy="212" r="4" fill="#947db1"/>
+    </g>
+    <g class="rg-ajaxs-garment" filter="url(#rg-ajaxs-lift)">
+      <use href="#rg-ajaxs-shirt" fill="url(#rg-ajaxs-cloth)" stroke="#ac969f" stroke-width="1.5"/>
+      <use href="#rg-ajaxs-shirt" fill="url(#rg-ajaxs-weave)"/>
+      <path d="M384 268q10 34 51 35 38 0 51-37-20 18-50 18-28 0-52-16z" fill="#c7b9bd" stroke="#ae9aab" stroke-width="1.2"/>
+      <path d="M389 273q13 23 46 23 33 0 46-23m-125 7-17 77m166-77 21 77m-270-28 24 51m324-52-21 49" fill="none" stroke="#a999a8" stroke-width="1.1" stroke-opacity=".7"/>
+      <path d="M340 474q86 18 184-3m-185 8q86 18 185-4m-181-105q17 57 8 99m158-99q-17 52-4 99" fill="none" stroke="#b9a7ac" stroke-width="1.3" stroke-opacity=".79"/>
+      <g class="rg-ajaxs-ink" transform="translate(363 326)">
+        <path d="M0 82c21-49 52-76 94-74 17 1 32 13 38 24-29-5-53 11-70 35L19 118H0z" fill="url(#rg-ajaxs-print)"/>
+        <path d="M27 119l51-60q23-29 47-20L69 119z" fill="#66558f"/>
+        <path d="M85 119l44-66 22 66z" fill="#ed9d91"/>
+        <path d="M3 123h144m-144 5h119" stroke="#8071a2" stroke-width="1.1" opacity=".8"/>
+      </g>
+      <path class="rg-ajaxs-cover" d="M347 317h176v121H347z" fill="#fff2db" stroke="#dba99b" stroke-width="1.4" opacity="0"/>
+      <ellipse class="rg-ajaxs-warmth" cx="425" cy="379" rx="135" ry="90" fill="url(#rg-ajaxs-glow)" opacity="0"/>
+    </g>
+    <g class="rg-ajaxs-head" filter="url(#rg-ajaxs-lift)">
+      <path d="M273 182l297-20 49 47-4 25-286 23-58-45z" fill="url(#rg-ajaxs-metal)" stroke="#a18db1" stroke-width="1.9"/>
+      <path d="M273 182l298-20 49 46-293 24z" fill="#655581" stroke="#9c87af" stroke-width="1.7"/>
+      <path d="M286 184l281-19 44 39-284 23z" fill="none" stroke="#c9adca" stroke-opacity=".48"/>
+      <path d="M331 236l285-21-1 14-283 23z" fill="#aa768d" opacity=".74"/>
+      <path d="M306 193l263-18m-244 31 257-19" stroke="#8c749e" stroke-width="1.7"/>
+      <path d="M393 188l56-5 20 19-56 5z" fill="#3f3356" stroke="#b995b3" stroke-width="1.2"/>
+      <path d="M425 187l14-1 7 7-14 1z" fill="#e9a8ad"/>
+    </g>
+    <g class="rg-ajaxs-handle" filter="url(#rg-ajaxs-lift)">
+      <path d="M249 163l179-57 126 4 7 13-127 11-167 65z" fill="#413451" stroke="#a07c9e" stroke-width="1.7"/>
+      <path d="M435 101h126q17 0 17 10t-17 11H435z" fill="#ab7699" stroke="#d6a6ba" stroke-width="1.7"/>
+      <path d="M452 105h101" stroke="#e2acc2" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="262" cy="177" r="13" fill="#796188" stroke="#bf9eba" stroke-width="1.4"/>
+      <circle cx="262" cy="177" r="4" fill="#d6b6c6"/>
+    </g>
+  </g>
+  <g transform="translate(619 468) rotate(10)" filter="url(#rg-ajaxs-lift)">
+    <rect x="-14" y="-2" width="113" height="71" rx="4" fill="#6f6299"/>
+    <rect width="110" height="69" rx="4" fill="#f3e4e7" stroke="#af97b6"/>
+    <path d="M12 17h78v12H12z" fill="#e3a194"/>
+    <path d="M13 36h49m-49 7h55m-55 7h34" stroke="#77729c" stroke-width="2"/>
+    <path d="M81 54l7-13 10 13z" fill="#806f9e"/>
+  </g>
+</svg></div>
+<figcaption class="scene-caption"><span class="scene-subject">Термоперенос на ткань</span>
+<button class="scene-replay" type="button" aria-label="Повторить анимацию" hidden><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><path d="M5 11a7 7 0 1 1 1.9 5.5M5 5v6h6" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button></figcaption>
+</figure></div></section>
+<section class="shell section deck-section" aria-labelledby="home-catalog">
+<div class="heading-row"><h2 id="home-catalog">Каталог</h2><a href="catalog.html" class="text-action">Весь каталог</a></div>
+<div class="catalog-deck" data-deck><a class="deck-card" href="catalog.html?group=%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C" style="--card-angle:-4deg">
+<div class="deck-picture"><img src="assets/18fbd91d9cff3e46b0830426.webp" alt="" loading="lazy"></div><div class="deck-copy"><h3>Печать</h3><p>Оперативная полиграфия, Бизнес-полиграфия</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9D%D0%B0%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5" style="--card-angle:5deg">
+<div class="deck-picture"><img src="assets/fc01d722b71681fbba3fa363.webp" alt="" loading="lazy"></div><div class="deck-copy"><h3>Нанесение</h3><p>Сувенирная продукция</p></div></a><a class="deck-card" href="catalog.html?group=%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B8%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82" style="--card-angle:-6deg">
+<div class="deck-picture"><img src="assets/c7df2b638d446799519c147a.webp" alt="" loading="lazy"></div><div class="deck-copy"><h3>Широкий формат</h3><p>Широкоформатная печать</p></div></a><a class="deck-card" href="catalog.html?group=%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0" style="--card-angle:4deg">
+<div class="deck-picture"><svg viewBox="0 0 312 265" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M63 87h165v114H63z" fill="var(--foil)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(-9 145 144)"/><path d="M84 90h164v114H84z" fill="var(--stock)" stroke="var(--stock-ink)" stroke-width="2.5" transform="rotate(5 166 147)"/><path d="M101 155c32-44 73-52 95 24h-95z" fill="var(--foil)"/><circle cx="194" cy="125" r="15" fill="var(--stock-ink)"/><path d="M101 190h125" stroke="var(--stock-ink)" stroke-width="2"/></svg></div><div class="deck-copy"><h3>Подготовка и обработка</h3><p>Дизайн и наружная реклама</p></div></a></div></section>
+<div class="shell material-note" data-reveal><aside class="lead-note"><div><h2>Собственная дизайн-студия</h2><p>Типография может помочь спроектировать внутреннее и наружное оформление. Если фирменный стиль уже готов, приложите исходные файлы. Если дизайна ещё нет, полезно указать назначение изделия и прислать примеры.</p></div><a href="guide.html" class="button secondary">Идея, производство и доставка</a></aside></div>
+<section class="shell section work" data-reveal><div class="section-title"><h2>Примеры работ</h2></div><div class="gallery"><figure><a href="assets/photo-1.webp" data-gallery="Работа из портфолио 2 Аякса"><img src="assets/photo-1.webp" alt="Работа из портфолио 2 Аякса" loading="lazy"></a><figcaption>Работа из портфолио 2 Аякса</figcaption></figure><figure><a href="assets/photo-2.webp" data-gallery="Образец печати из портфолио"><img src="assets/photo-2.webp" alt="Образец печати из портфолио" loading="lazy"></a><figcaption>Образец печати из портфолио</figcaption></figure><figure><a href="assets/photo-3.webp" data-gallery="Пример продукции типографии"><img src="assets/photo-3.webp" alt="Пример продукции типографии" loading="lazy"></a><figcaption>Пример продукции типографии</figcaption></figure><figure><a href="assets/18fbd91d9cff3e46b0830426.webp" data-gallery="Оперативная полиграфия"><img src="assets/18fbd91d9cff3e46b0830426.webp" alt="Оперативная полиграфия" loading="lazy"></a><figcaption>Оперативная полиграфия</figcaption></figure><figure><a href="assets/fc01d722b71681fbba3fa363.webp" data-gallery="Сувенирная продукция"><img src="assets/fc01d722b71681fbba3fa363.webp" alt="Сувенирная продукция" loading="lazy"></a><figcaption>Сувенирная продукция</figcaption></figure><figure><a href="assets/c7df2b638d446799519c147a.webp" data-gallery="Широкоформатная печать"><img src="assets/c7df2b638d446799519c147a.webp" alt="Широкоформатная печать" loading="lazy"></a><figcaption>Широкоформатная печать</figcaption></figure></div><dialog id="gallery-dialog" class="gallery-dialog" aria-label="Пример продукции">
+<button type="button" class="gallery-close" aria-label="Закрыть"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<figure><img alt=""><figcaption></figcaption></figure>
+<div class="gallery-controls"><button type="button" data-gallery-back aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<p aria-live="polite"></p><button type="button" data-gallery-next aria-label="Следующее фото"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m10 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+</dialog></section>
+<section class="shell section flow-section" aria-labelledby="flow-title">
+<header class="section-title"><h2 id="flow-title">Как оформить заказ</h2></header>
+<ol class="order-flow" data-flow><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M4 5h7v6H4zM13 5h7v6h-7zM4 13h7v6H4zM13 13h7v6h-7z" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Выберите изделие</h3><p>В каталоге собраны варианты, фото и характеристики.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M5 5h14v14H5zM9 5v4m3-4v2m3-2v4M5 12h4m-4 3h2" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Укажите тираж</h3><p>Добавьте формат, материал и другие параметры.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6m-6 4h5" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Приложите макет</h3><p>Если файл готов, сверьте его с памяткой.</p></li><li><span class="flow-icon"><svg viewBox="0 0 24 24" width="27" height="27" aria-hidden="true" focusable="false"><path d="M20 11v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h5m-3 9 3 3 7-8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Получите расчёт</h3><p>Типография подтвердит стоимость и срок по параметрам заказа.</p></li></ol></section>
+<section class="shell section" data-reveal><div class="price-banner"><div><h2>Расчёт по параметрам</h2><p>Выберите изделия и подготовьте заявку с размерами, сроком и файлами.</p></div>
 <a href="pricing.html" class="button secondary">К расчёту</a></div></section>
 <section id="contacts" class="shell section"><div class="section-title"><h2>Контакты</h2></div><div class="contact-grid"><a class="contact" href="tel:+78313095555"><span>Телефон</span><strong>+7 (83130) 9-55-55</strong></a><a class="contact" href="mailto:info@2ajaxs.com"><span>Почта</span><strong>info@2ajaxs.com</strong></a><div class="contact"><span>Адрес</span><strong>Саров, ул. Юности, 15</strong></div></div></section></main>
 <footer class="footer"><div class="shell footer-inner"><div><strong>2 Аякса</strong><p>Саров · Типография</p></div><nav aria-label="Полезные ссылки"><a href="catalog.html" class="">Каталог</a><a href="pricing.html" class="">Цены и расчёт</a><a href="guide.html" class="">Идея, производство и доставка</a><a href="order.html" class="">Оставить заявку</a></nav>
